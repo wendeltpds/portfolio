@@ -14,7 +14,7 @@ const Links = () => {
 
 
   return (
-    <header  className="cabeçalho" >
+    <header  className="cabeçalhos" >
       <nav>
         <ul className="ul">
           <div>

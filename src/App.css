@@ -6,6 +6,11 @@
     font-family: "monospace" sans-serif ;
 }
 
+body {
+    width: 100%;
+    background: linear-gradient(68.20deg , black , rgb(17, 17, 17))
+}
+
 .loading-app-principal {
     height: 100vh;
     display: flex;
