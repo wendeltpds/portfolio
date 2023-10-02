@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "monospace" sans-serif ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*.inicio-wendel {
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    width: 100px;
+}*/
+
+.loading-app-principal {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.loading-imagem-principal {
+   font-size: 100px;
+   animation-name: loader;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nome-loading {
+    font-size: 90px;
 }
 
-.App-link {
-  color: #61dafb;
+.loading-app-principal p {
+    margin-top: 40px;
+    font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loading-app-principal h4 {
+    margin-top: 35px;
+    font-size: 30px;
+    margin-left: 4px;
+    animation: piscando 3s infinite;
+}
+
+@keyframes piscando {
+    0% {color: black;}
+    50% {color: transparent;}
+    100% {color: black;}
+}
+
+@keyframes loading {
+    0% {transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
 }

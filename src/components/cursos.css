@@ -1,0 +1,78 @@
+.cursos {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome-cursos {
+    color: aliceblue;
+    margin-bottom: 50px;
+}
+
+
+.cursos_analise {
+    color: aliceblue;
+    padding-bottom: 90px;
+    width: 80%;
+}
+
+.cursos_analise h1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.cursos_analise p {
+    display: flex;
+    flex-direction: column;
+}
+
+.cursos_data {
+    display: flex;
+    justify-content: center;
+}
+
+.cursos_ingles {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+}
+
+.cursos_ingles h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cursos_ingles p {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:700px) {
+    .cursos_ingles h1{
+        font-size: 23px;
+    }
+    .cursos_ingles p {
+        font-size: small;
+    }
+    .cursos_analise p {
+        font-size: small;
+    }
+    .cursos_analise h1 {
+        font-size: 23px;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .cursos_ingles p {
+        width: 60%;
+    }
+}

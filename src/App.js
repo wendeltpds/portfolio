@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import Inicio from './components/Inicio';
+import Sobre from './components/Sobre';
+import Contato from './components/Contato';
+import './App.css'
+import Projetos from './components/projetos'
+import Links from './components/Links';
+import Cursos from './components/Cursos';
+import {Style} from './components/style';
+import { useState , useEffect } from 'react';
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-function App() {
+
+
+const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+    setLoading(false);
+    }, 1000);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {loading ?
+          <div className='loading-app-principal' >
+           <h1 className='nome-loading' >wendel tadeu</h1>
+           <p>portifolio</p> 
+           <h4>...</h4>
+          </div>
+           : (
+        <>
+            <Style>
+              <Links />
+              <Inicio />
+              <Sobre />
+              <Contato />
+              <Cursos />
+              <Projetos />
+            </Style>
+
+            <ToastContainer  
+              position="top-center"
+              theme="dark"
+            />
+        </>
+      )}
+      </>
   );
-}
+};
 
 export default App;
+//<AiOutlineLoading3Quarters className='loading-imagem-principal' /> 
