@@ -35,10 +35,8 @@ function Main() {
             setTeste(false)
             
              reset();
-            
-            setTimeout(() => {
-              toast.success(`Ola ${data.nome} recebi seu email. obrigado! `)
-            }, 100)
+
+             toast.success(`Ola ${data.nome} recebi seu email e entrarei em contato o mais breve possivel. obrigado! `)
           }
         )
         .catch((err) => {
