@@ -5,7 +5,8 @@
 .cabeçalho {
     z-index: 2;
     position: fixed;
-    width: 100%;
+    overflow: hidden;
+    /*width: 100%;*/
     background: linear-gradient(68.15deg , black , gray , rgb(62, 62, 63) );
 }
 
@@ -31,7 +32,7 @@
 }
 
 .endereços li {
-   padding-right: 50px;
+   margin-right: 50px;
 }
 
 .endereços li:hover{
@@ -107,12 +108,12 @@
 }
 
 
-@media (width < 281px) {
+/*@media (width < 281px) {
     .cabeçalho{
         width: 300px;
     }
 
-}
+}*/
 
 
 .lista_interativa {

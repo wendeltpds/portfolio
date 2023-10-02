@@ -44,15 +44,6 @@
     }
 }
 
-/*.h1 {
-    position:relative;
-    max-width: 500px;
-    width: 80%;
-    max-height: 270px;
-    background-color: aliceblue;
-    font-size:larger;
-}*/
-
 @media screen and (max-width:700px) {
     .texto-sobre{
         font-size: medium;

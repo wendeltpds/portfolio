@@ -17,7 +17,7 @@ const Cursos = () => {
              >
                 <h1>analise e desenvolvimento de sistemas : cursando <span className='cursos_data' >01/08/2022 - 01/08/2024</span> </h1>
                 <p>aprendendo um pouco sobre diferentes tipos de linguagens  e assuntos relacionados a ti,
-                    <span>ja em casa estou focando em front-end html , css , javascript , typescript e react.js , e estou estudando node.js</span></p>
+                    <span>ja em casa estou focando em front-end html , css , javascript , typescript , react.js e next.js  mais tambem estou estudando node.js</span></p>
             </motion.div>
 
             <motion.div 

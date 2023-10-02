@@ -6,12 +6,6 @@
     font-family: "monospace" sans-serif ;
 }
 
-/*.inicio-wendel {
-    color: rgb(0, 0, 0);
-    background-color: aliceblue;
-    width: 100px;
-}*/
-
 .loading-app-principal {
     height: 100vh;
     display: flex;
@@ -19,12 +13,6 @@
     align-items: center
 }
 
-.loading-imagem-principal {
-   font-size: 100px;
-   animation-name: loader;
-   animation-duration: 5s;
-   animation-iteration-count: infinite;
-}
 
 .nome-loading {
     font-size: 90px;
@@ -35,7 +23,7 @@
     font-size: 20px;
 }
 
-.loading-app-principal h4 {
+.loading-app-principal p span {
     margin-top: 35px;
     font-size: 30px;
     margin-left: 4px;
@@ -45,10 +33,19 @@
 @keyframes piscando {
     0% {color: black;}
     50% {color: transparent;}
-    100% {color: black;}
+    100% {color: black;}  
 }
 
-@keyframes loading {
-    0% {transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
+@media screen and (max-width: 700px) {
+    .loading-app-principal {
+        flex-direction: column;
+    }
+
+    .nome-loading {
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

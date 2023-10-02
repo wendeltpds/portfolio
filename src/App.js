@@ -25,9 +25,8 @@ const App = () => {
     <>
       {loading ?
           <div className='loading-app-principal' >
-           <h1 className='nome-loading' >wendel tadeu</h1>
-           <p>portifolio</p> 
-           <h4>...</h4>
+            <h1 className='nome-loading' >wendel <span>tadeu</span></h1>
+            <p>portifolio <span>...</span> </p> 
           </div>
            : (
         <>
