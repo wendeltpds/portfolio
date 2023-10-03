@@ -80,8 +80,8 @@ const NewProject = () => {
         <SwiperSlide>
           <img className='imagem_swiper' src={carro} alt="imagens"/> 
           <div className='botoes-direcionamento'>
-            <a className='botoes-direcionamento-pagina' href="https://wendeltpds.github.io/paginadecarro/carro/" target='blank' ><button>pagina web</button></a>
-            <a className='botoes-direcionamento-github' href="https://github.com/wendeltpds/paginadecarro/tree/main/carro" target='blank' ><button>github</button></a>
+            <a className='botoes-direcionamento-pagina' href="https://carro-nu.vercel.app/" target='blank' ><button>pagina web</button></a>
+            <a className='botoes-direcionamento-github' href="https://github.com/wendeltpds/carro" target='blank' ><button>github</button></a>
           </div>
         </SwiperSlide>
 

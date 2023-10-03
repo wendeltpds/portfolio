@@ -22,7 +22,7 @@ const App = () => {
   }, []);
 
   return (
-    <>
+    <div className='app-div-principal' >
       {loading ?
           <div className='loading-app-principal' >
             <h1 className='nome-loading' >wendel <span>tadeu</span></h1>
@@ -30,14 +30,14 @@ const App = () => {
           </div>
            : (
         <>
-            <Style>
-              <Links />
-              <Inicio />
-              <Sobre />
-              <Contato />
-              <Cursos />
-              <Projetos />
-            </Style>
+              <Style>      
+                <Links />
+                <Inicio />
+                <Sobre />
+                <Contato />
+                <Cursos />
+                <Projetos />
+              </Style>
 
             <ToastContainer  
               position="top-center"
@@ -45,7 +45,7 @@ const App = () => {
             />
         </>
       )}
-      </>
+      </div>
   );
 };
 
