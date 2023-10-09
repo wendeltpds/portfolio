@@ -3,4 +3,5 @@ html {
     margin: 0;
     scroll-behavior: smooth;
     background: linear-gradient(68.20deg , black , rgb(17, 17, 17));
+    width: 100%;
 }

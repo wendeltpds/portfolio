@@ -21,6 +21,11 @@
         margin-bottom: 250px;
     }
 }
+@media screen and (max-width:500px) {
+    .contato_links {
+        font-size: 10px;
+    }
+}
 
 @media (min-width: 601px) {
     .imagens {
