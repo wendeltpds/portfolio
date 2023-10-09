@@ -5,10 +5,8 @@
 .cabeçalhos {
     z-index: 2;
     position: fixed;
-    overflow: hidden;
     width: 100%;
     background: linear-gradient(68.15deg , black , gray , rgb(62, 62, 63) );
-    
 }
 
 .cabeçalhos ul {
@@ -91,9 +89,6 @@
     .endereços {
         display: none;
     }
-    .rotas_links {
-        color: transparent;
-    }
     .imagem_wendel {
         height: 60px;
     }
@@ -141,6 +136,13 @@
     margin-top: 100px;
 }
 
+.endereço-inicio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
 
 .rotas_links {
     display: flex;
@@ -152,6 +154,9 @@
     background-color: aliceblue;
     cursor: pointer;
 }
+ .house-inicio {
+    margin-right: 6px;
+ }
 
 .rotas_links a {
     margin-left: 5px;

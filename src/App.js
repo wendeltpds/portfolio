@@ -12,7 +12,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 
+
+
 const App = () => {
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -31,8 +34,8 @@ const App = () => {
            : (
         <>
               <Style>      
-                <Links />
-                <Inicio />
+                <Links/>
+                <Inicio/>
                 <Sobre />
                 <Contato />
                 <Cursos />

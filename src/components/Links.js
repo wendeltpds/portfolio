@@ -1,20 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import menuaberto from './imagem/menuaberto.png'
 import imagemmenu from './imagem/imagemmenu.png'
 import './Links.css';
 import wendel from './imagem/imagem_wendel3.png'
 import {BsHouseDoor} from 'react-icons/bs'
 
+
+
 const Links = () => {
+
   const [menuOpen, setMenuOpen] = useState(false);
+
 
   function menuShow() {
     setMenuOpen((open) => !open)
   }
 
-
   return (
-    <header  className="cabeçalhos" >
+    <header id='a' className="cabeçalhos" >
       <nav>
         <ul className="ul">
           <div>
@@ -25,7 +28,7 @@ const Links = () => {
           <div>
             <div className="endereços">
               <li>
-                <a href="#inicio" >inicio</a>
+                <a href="#inicio">inicio</a>
               </li>
               <li>
                 <a href="#sobremim">Sobre mim</a>
@@ -53,6 +56,7 @@ const Links = () => {
         </ul>
       </nav>
 
+
       {menuOpen && (
         <div className= "mobile_menu"  id="mobile_menu">
           <button  className='botao_esconder' onClick={menuShow}>
@@ -60,10 +64,12 @@ const Links = () => {
           </button>
           <div className="endereço">
             <li>
-              <span className="rotas_links" > 
-              <BsHouseDoor />
-              <a href="#inicio">inicio</a>
-              </span>
+              <a className='endereço-inicio' href="#inicio">
+                <span className="rotas_links" > 
+                  <BsHouseDoor className='house-inicio' />
+                  <p>inicio</p>
+                </span>
+              </a>
             </li>
             <li>
               <a className="rotas_links" href="#sobremim">Sobre mim</a>

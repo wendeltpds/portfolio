@@ -3,15 +3,13 @@ import imagem from "./imagem/imagemprogramçao1.png"
 import {FaLinkedin , FaGithub , } from 'react-icons/fa'
 import {BiLogoGmail} from 'react-icons/bi'
 import { motion } from 'framer-motion'
+import React from 'react';
 
-
-const Inicio = () => {
-
-
+const Inicio = () => {  
+  
     return (
         <div
-
-         id='inicio' 
+         id='inicio'
          className="inicio" >
           <motion.div 
             initial= {{opacity: 0, x: -100}} 
@@ -34,6 +32,7 @@ const Inicio = () => {
         </div>
     )
   };
+
   
 
-export default Inicio
+  export default Inicio;

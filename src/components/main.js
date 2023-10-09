@@ -49,8 +49,8 @@ function Main() {
   return (
     <div className='tudo_main' >
       
-         <main className='main_container'>
-        <form className='botao_principal' onSubmit={handleSubmit(alerta)}> 
+    <main className='main_container'>
+      <form className='botao_principal' onSubmit={handleSubmit(alerta)}> 
           <h1 className='nome'>Contato</h1>
           <input className='input_container' type="search" placeholder='digite seu nome' {...register('nome')}/>
           <span>{errors.nome && <span className='erro' >{errors.nome.message}</span> }</span>
@@ -59,7 +59,7 @@ function Main() {
           <input className='input_container_mensagem' type="search"  placeholder='escreva sua mensagem' {...register('mensagem')}/>
           <span>{errors.mensagem && <span className='erro' >{errors.mensagem.message}</span> }</span>
           <button className='botao_main' type='submit' >{teste ? <AiOutlineLoading3Quarters className='loading' /> :'enviar'}</button>
-        </form>
+      </form>
     </main>
     </div>
   )

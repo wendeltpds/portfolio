@@ -2,51 +2,9 @@
     color: aliceblue;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
 }
 
 .swiper {
     width: 100%;
     max-width: 1440px;
-    margin-bottom: 100px;
-}
-
-.imagem_swiper {
-    width: 100%;
-}
-
-
-.minha-imagem {
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-}
-
-.botoes-direcionamento {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.botoes-direcionamento-pagina:hover {
-    transform: scale(1.1);
-}
-
-.botoes-direcionamento-github:hover {
-    transform: scale(1.1);
-}
-
-
-.botoes-direcionamento a {
-    margin: 20px 10px 10px 50px;
-}
-
-.botoes-direcionamento a button {
-    color: white;
-    background: linear-gradient(68.15deg , rgb(11, 10, 10) , rgb(69, 66, 66));
-    width: 90px;
-    height: 40px;
-    border-radius: 20px;
-    border: 1px solid white;
-    cursor: pointer;
 }
