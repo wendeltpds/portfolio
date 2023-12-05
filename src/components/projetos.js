@@ -4,8 +4,10 @@ import mercado from '../components/imagem/mercado-livre.png'
 import carro from '../components/imagem/pagina-carro.png'
 import costs from '../components/imagem/costs.png'
 import tailwind from '../components/imagem/projeto-tailwind.png'
+import wendelshop from "./imagem/wendelshop.png"
 import React from 'react';
 import Projeto from './projetos2'
+
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -55,6 +57,9 @@ const NewProject = () => {
               navigation
             >
               <SwiperSlide>       
+                < Projeto imagem={wendelshop} pagina="https://wendelshop.vercel.app/" github="https://github.com/wendeltpds/wendelshop" mensagem="projeto criado com react , Next , typescript , tailwindcss , NextAuth , stripe.js" />
+              </SwiperSlide>
+              <SwiperSlide>       
                 < Projeto imagem={tailwind} pagina="https://nexttailwind-gamma.vercel.app/" github="https://github.com/wendeltpds/nexttailwind"  mensagem="projeto criado com react.js , next.js 13 , tailwindcss , JSON-server  ,esse projeto criei somente para treinar minhas abilidades ."/>
               </SwiperSlide>
               <SwiperSlide>       
@@ -69,6 +74,7 @@ const NewProject = () => {
               <SwiperSlide>       
                 < Projeto imagem={costs} pagina="https://costs-ruddy.vercel.app/" github="https://github.com/wendeltpds/costs" mensagem="projeto criado com react.js e json-server com ajuda do youtuber matheus battisti quando estava iniciando meus estudos com react.js " />
               </SwiperSlide>
+              https://wendelshop.vercel.app/
 
             </Swiper>
             </div>
