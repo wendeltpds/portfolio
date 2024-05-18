@@ -52,7 +52,7 @@ const NewProject = () => {
               navigation
             >
               <SwiperSlide>       
-                < Projeto imagem={foods} pagina="https://foods-beryl.vercel.app/" github="https://github.com/wendeltpds/foods" mensagem="projeto criado com react.js e json-server com ajuda do youtuber matheus battisti quando estava iniciando meus estudos com react.js " />
+                < Projeto imagem={foods} pagina="https://foods-beryl.vercel.app/" github="https://github.com/wendeltpds/foods" mensagem="projeto fullstack criado com react.js e nextjs e prisma utilizando next-auth" />
               </SwiperSlide>
               <SwiperSlide>       
                 < Projeto imagem={wendelshop} pagina="https://wendelshop.vercel.app/" github="https://github.com/wendeltpds/wendelshop" mensagem="projeto criado com react , Next , typescript , tailwindcss , NextAuth , stripe.js" />
