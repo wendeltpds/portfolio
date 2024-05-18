@@ -1,0 +1,91 @@
+.projeto2-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    flex-direction: column;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.carta {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+.container:hover .carta {
+    transform: rotateY(180deg)
+}
+
+.frente {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.tras {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    backface-visibility: hidden;
+    background-color: rgb(192, 192, 192);
+    transform: rotatey(180deg);
+}
+.imagem_swiper {
+    width: 100%;
+    height: 350px;
+}
+
+.minha-imagem {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.botoes-direcionamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transform: scale(1.1);
+}
+
+.botoes-direcionamento-pagina:hover {
+    transform: scale(1.1);
+}
+
+.botoes-direcionamento-github:hover {
+    transform: scale(1.1);
+}
+
+
+.botoes-direcionamento a {
+    margin: 20px 10px 10px 50px;
+}
+
+.botoes-direcionamento a button {
+    color: white;
+    background: linear-gradient(68.15deg , rgb(11, 10, 10) , rgb(69, 66, 66));
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.tras-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.tras-container div {
+    width: 70%;
+}

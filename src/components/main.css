@@ -1,0 +1,70 @@
+.main_container {
+    max-width: 700px;
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(68.15deg , green ,  rgb(91, 150, 206) , rgb(198, 149, 26));
+}
+
+@media (min-width: 1200px ) {
+    .main_container {
+        width: 700px
+    }
+}
+
+.tudo_main {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.botao_principal {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.botao_principal  .input_container {
+    margin-top: 5px;
+    height: 40px;    
+}
+
+.input_container_mensagem {
+    height: 90px;
+    margin-top: 5px;
+}
+
+
+.botao_principal h1 {
+    text-align: center;
+}
+
+.botao_main {
+    height: 40px;
+    margin-top: 5px;
+}
+
+.botao_main:hover {
+    background-color: rgb(197, 197, 191);
+    cursor: pointer;
+}
+
+.spiner {
+    background-color: aliceblue;
+    width: 100px;
+    height: 100px;
+}
+
+.loading {
+    animation-name: loader;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes loader {
+    0% {transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "monospace" sans-serif ;
+}
+
+.app-div-principal {
+    width: 100%;
+}
+
+.loading-app-principal {
+    background-color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nome-loading {
+    font-size: 90px;
+}
+
+.loading-app-principal p {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.loading-app-principal p span {
+    margin-top: 35px;
+    font-size: 30px;
+    margin-left: 4px;
+    animation: piscando 3s infinite;
+}
+
+@keyframes piscando {
+    0% {color: black;}
+    50% {color: transparent;}
+    100% {color: black;}  
+}
+
+@media screen and (max-width: 700px) {
+    .loading-app-principal {
+        flex-direction: column;
+    }
+
+    .nome-loading {
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

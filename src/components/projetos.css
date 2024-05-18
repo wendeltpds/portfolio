@@ -1,0 +1,10 @@
+.nome-projetos {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 1440px;
+}
