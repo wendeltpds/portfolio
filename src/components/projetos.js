@@ -3,6 +3,7 @@ import ballerini from '../components/imagem/imagem-ballerini.png'
 import mercado from '../components/imagem/mercado-livre.png'
 import carro from '../components/imagem/pagina-carro.png'
 import costs from '../components/imagem/costs.png'
+import foods from '../components/imagem/foodsw.png'
 import tailwind from '../components/imagem/projeto-tailwind.png'
 import wendelshop from "./imagem/wendelshop.png"
 import React from 'react';
@@ -23,7 +24,6 @@ import { useEffect, useState } from 'react';
 const NewProject = () => {
   const [nome , setnome] = useState(2)
 
-
   useEffect(() => {
 
     function wendel() {
@@ -36,16 +36,11 @@ const NewProject = () => {
 
     }
       wendel()
-
       window.addEventListener('resize' , wendel)
       return() => {
         window.removeEventListener('resize' , wendel)
       }
-
     }, []) 
-
-
-
 
     return (
             <div className='swiper' >
@@ -56,6 +51,9 @@ const NewProject = () => {
               slidesPerView={nome}
               navigation
             >
+              <SwiperSlide>       
+                < Projeto imagem={foods} pagina="https://foods-beryl.vercel.app/" github="https://github.com/wendeltpds/foods" mensagem="projeto criado com react.js e json-server com ajuda do youtuber matheus battisti quando estava iniciando meus estudos com react.js " />
+              </SwiperSlide>
               <SwiperSlide>       
                 < Projeto imagem={wendelshop} pagina="https://wendelshop.vercel.app/" github="https://github.com/wendeltpds/wendelshop" mensagem="projeto criado com react , Next , typescript , tailwindcss , NextAuth , stripe.js" />
               </SwiperSlide>
@@ -74,8 +72,6 @@ const NewProject = () => {
               <SwiperSlide>       
                 < Projeto imagem={costs} pagina="https://costs-ruddy.vercel.app/" github="https://github.com/wendeltpds/costs" mensagem="projeto criado com react.js e json-server com ajuda do youtuber matheus battisti quando estava iniciando meus estudos com react.js " />
               </SwiperSlide>
-              https://wendelshop.vercel.app/
-
             </Swiper>
             </div>
     )

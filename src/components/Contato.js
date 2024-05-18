@@ -29,7 +29,6 @@ const Contato = () => {
                 <div>
                     <Main />
                 </div>
-
             </motion.div>
         </div>
     )
