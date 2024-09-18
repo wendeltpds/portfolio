@@ -13,7 +13,7 @@ const Sobre = () => {
 
     return (
         <motion.div
-         id='sobremim'
+         id='sobre'
           className='principal-sobre' 
           initial= {{opacity: 0}} 
           whileInView={{opacity: 1}}

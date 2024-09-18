@@ -3,13 +3,21 @@ import menuaberto from './imagem/menuaberto.png'
 import imagemmenu from './imagem/imagemmenu.png'
 import './Links.css';
 import wendel from './imagem/imagem_wendel3.png'
-import {BsHouseDoor} from 'react-icons/bs'
 
 
 
 const Links = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
+
+
+  const textos = [
+    "inicio",
+    "sobre",
+    "contato",
+    "cursos",
+    "projetos"
+  ]
 
 
   function menuShow() {
@@ -21,35 +29,27 @@ const Links = () => {
       <nav>
         <ul className="ul">
           <div>
-            <li className="wendel">
+            <li className="wendel">         
               <a href="#inicio"><img className="imagem_wendel" src={wendel} alt="imagem wendel" /></a>
             </li>
           </div>
           <div>
-            <div className="endereços">
-              <li>
-                <a href="#inicio">inicio</a>
-              </li>
-              <li>
-                <a href="#sobremim">Sobre mim</a>
-              </li>
-              <li>
-                <a href="#contato">Contato</a>
-              </li>
-              <li>
-                  <a href="#cursos">Cursos</a>
-              </li>
-              <li>
-                  <a href="#projetos">Projetos</a>
-              </li>
-            </div>
 
+            <div className="endereços">
+            {textos.map((texto) => (
+              <li>
+                <a href={`#${texto}`} >{texto}</a>
+              </li>
+            ))}
+              </div>
             <div className='imagem_logo' >
 
             <div className="mobile_menu_icon">
+            {!menuOpen &&               
                 <button  className='botao_esconder' onClick={menuShow}>
                   <img className='imagem_menuaberto' src={imagemmenu} alt="menuaberto"/>
                 </button>
+            }
             </div> 
               </div>
         </div>
@@ -63,26 +63,12 @@ const Links = () => {
               <img  className='imagem_menu' src={menuaberto} alt="imagem menu" />
           </button>
           <div className="endereço">
-            <li>
-              <a className='endereço-inicio' href="#inicio">
-                <span className="rotas_links" > 
-                  <BsHouseDoor className='house-inicio' />
-                  <p>inicio</p>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a className="rotas_links" href="#sobremim">Sobre mim</a>
-            </li>
-            <li>
-              <a className="rotas_links" href="#contato">Contato</a>
-            </li>
-            <li>
-              <a className="rotas_links" href="#cursos">Cursos</a>
-            </li>
-            <li>
-              <a className="rotas_links" href="#projetos">Projetos</a>
-            </li>
+
+          {textos.map((texto) => (
+              <li className="rotas_links">
+                <a onClick={menuShow} href={`#${texto}`} >{texto}</a>
+              </li>
+            ))}
           </div>
         </div>
       )}
