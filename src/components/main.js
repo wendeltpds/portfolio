@@ -29,7 +29,7 @@ function Main() {
       email: data.email
     };
       emailjs
-      .send("service_ecrpk9j", "template_tptyxs8", templateParams, "ondqzkkaCJI77tZMo")
+      .send("service_03fjw1n", "template_tptyxs8", templateParams, "ondqzkkaCJI77tZMo")
         .then(
           (response) => {
             setTeste(false)

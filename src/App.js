@@ -53,4 +53,3 @@ const App = () => {
 };
 
 export default App;
-//<AiOutlineLoading3Quarters className='loading-imagem-principal' /> 
