@@ -59,17 +59,19 @@ const Links = () => {
 
       {menuOpen && (
         <div className= "mobile_menu"  id="mobile_menu">
+          
           <button  className='botao_esconder' onClick={menuShow}>
               <img  className='imagem_menu' src={menuaberto} alt="imagem menu" />
           </button>
-          <div className="endereço">
 
-          {textos.map((texto) => (
-              <li className="rotas_links">
-                <a onClick={menuShow} href={`#${texto}`} >{texto}</a>
-              </li>
-            ))}
+          <div className="endereço">
+            {textos.map((texto) => (
+                <li href={`#${texto}`} className="rotas_links">
+                  <a onClick={menuShow} href={`#${texto}`} >{texto}</a>
+                </li>
+              ))}
           </div>
+
         </div>
       )}
     </header>

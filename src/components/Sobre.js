@@ -23,7 +23,7 @@ const Sobre = () => {
             <h1 className='nome-sobremim' >Sobre Mim</h1>
             <p className='texto-sobre' >
                 meu nome e Wendel Tadeu e sou apaixonado por tecnologia e decidi trilhar o camiho da programação ,
-                atualmente estou  focando nas linguagens  voltadas para o front-end , HTML , CSS ,Javascript , Typescript , react.js e next.js  mas  estou estudando node.js e pretendo estudar java.
+                atualmente estou  focando nas linguagens  voltadas para o front-end , HTML , CSS ,Javascript , Typescript , react.js , next.js , angular mas  estou estudando node.js e pretendo estudar java.
             </p>
 
             <h1 className='linguagens-sobre' >linguagens</h1>

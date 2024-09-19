@@ -15,7 +15,7 @@ const Cursos = () => {
              exit={{opacity: 0}}
              transition={{ duration:0.8 , delay: 0.4}}
              >
-                <h1>analise e desenvolvimento de sistemas : cursando <span className='cursos_data' >01/08/2022 - 01/08/2024</span> </h1>
+                <h1>analise e desenvolvimento de sistemas <span className='cursos_data' >01/08/2022 - 01/08/2024</span> </h1>
                 <p>aprendendo um pouco sobre diferentes tipos de linguagens  e assuntos relacionados a ti,
                 <span>ja em casa estou focando em front-end html , css , javascript , typescript , react.js e next.js  mais tambem estou estudando node.js</span></p>
             </motion.div>
@@ -27,7 +27,7 @@ const Cursos = () => {
             exit={{opacity: 0}}
             transition={{ duration:0.8 , delay: 0.4}}
              >
-                <h1>cacs linguas UFMG : curso de Ingles <span>01/08/2017 - 15/03/2020 </span> </h1>
+                <h1>cacs linguas UFMG ( Inglês ) <span>01/08/2017 - 15/03/2020 </span> </h1>
                 <p>cursei durante 2 anos e meio  curso de ingles na ufmg  no modelo presencial  , parei no level intermediary 2 por conta da pandemia </p>
             </motion.div>
         </div>
